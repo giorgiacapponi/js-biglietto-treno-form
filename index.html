@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="ms_container text-bg-danger py-5 vh-100 ">
+        <h1 class="text-center">calcola il prezzo del tuo biglietto
+        </h1>
+        <div class="container w-50 text-bg-light py-3">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">nome e cognome</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+                <div class="col"><div class="mb-3">
+                    <label for="km" class="form-label">km da percorrere</label>
+                    <input type="text" class="form-control" id="km" aria-describedby="emailHelp">
+                </div></div>
+                <div class="col"> 
+                    <div class="mb-3">
+                        <label for="age" class="mb-2" >la tua età?</label>
+                    <select class="form-select" id="age" aria-label="Default select example">
+                        <option value="1">0-17</option>
+                        <option value="18">18-64</option>
+                        <option value="65">65+</option>
+                    </select>
+                </div>
+            </div>
+                
+            </div>    
+            <div class="row2 d-flex justify-content-center mt-3">
+                <div class="col2 w-auto me-2">   
+                    <button type="submit"id="btn" class="btn btn-secondary">Genera</button>
+                </div>
+                <div class="col2 w-auto">
+                    <button type="submit"  class="btn btn-secondary">annulla</button>
+                </div>
+            </div>
+                
+               
+            
+        </div>
+        <h2 class="text-center mt-3">il tuo biglietto</h2>
+        <div class="container  w-50 text-bg-light py-3">
+            <h4>Dettagli passeggero</h4>
+            <table class="table table-borderless border">
+                <thead>
+                  <tr>
+                    <th scope="col" class="bg-secondary">nome passeggero</th>
+                    <th scope="col">offerta</th>
+                    <th scope="col">carrozza</th>
+                    <th scope="col">codice cp</th>
+                    <th scope="col">costo biglietto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" id="user-name" class="bg-secondary"></th>
+                    <td id="discount"></td>
+                    <td id="n-carrozza"></td>
+                    <td id="n-code"></td>
+                    <td id="ticket-price"></td>
+                  </tr>
+                
+                </tbody>
+              </table>
+        </div>
+    </div>
+ <script src="js/script.js"></script>   
+</body>
+</html>
