@@ -43,6 +43,7 @@ submitBtn.addEventListener('click', function(){
     discount= "sconto 40%"
    }
    console.log('il prezzo del tuo biglietto ',price);
+   console.log('ciao nuoova linea');
 
    //carrozza e codice
    let carrozza = Math.floor((Math.random() * 10) + 1);
